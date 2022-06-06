@@ -1,0 +1,150 @@
+$lightColor: #ffffff;
+$darkColor: #000;
+$lightBlue: hsl(236, 33%, 92%);
+$darkBlue: hsl(236, 9%, 61%);
+$brightBlue:  hsl(220, 98%, 61%);
+$darkGreyBlue1: hsl(236, 9%, 61%);
+$darkGreyBlue2: hsl(235, 19%, 35%);
+$font : 'Josefin Sans', sans-serif;
+
+.taskList{
+    width: 27rem;
+    height: auto;
+    margin-top: 1rem !important;
+}
+
+.options{
+    width: 100%;
+    height: 3rem;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: $lightColor;
+    color: $darkColor;
+    font-family: $font;
+    justify-content: space-between;
+    
+ 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+.dark-theme .options{
+    background-color: $darkGreyBlue2;
+}
+.options span{
+    align-self: center;
+    margin-left: 1rem !important;
+}
+.items-left{
+    color: $darkGreyBlue1;
+}
+.dark-theme .filterContainer{
+    background-color: $darkGreyBlue2 !important;
+}
+.filter-container{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.filter-container2{
+    display: none;
+}
+.filterContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 4rem;
+    align-self: center;
+    
+}
+.filterContainer button{
+    font-size: 0.9rem;
+    align-self: center;
+    background-color: $lightColor;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    color: $darkGreyBlue1;
+    cursor: pointer;
+    font-family: $font;
+
+}
+.dark-theme .filterContainer button{
+    background-color: $darkGreyBlue2;
+}
+.filterContainer button:hover{
+    color: $darkGreyBlue2;
+}
+.dark-theme button:hover{
+    color: $lightColor !important;
+}
+.filterContainer button.active{
+    color: $brightBlue;
+}
+.options button{
+    align-self: center;
+    background-color: $lightColor;
+    border: none;
+    outline: none;
+    margin-right: 0.4rem !important;
+}
+.completedBtn{
+    color: $darkGreyBlue1 !important;
+    cursor: pointer;
+    font-family: $font;
+}
+.dark-theme .completedBtn{
+    background-color: $darkGreyBlue2;
+}
+.completedBtn:hover{
+    color: $darkGreyBlue2 !important;
+}
+.no-tasks{
+    width: 100% !important;
+    background-color: $lightBlue !important;
+    color: $darkGreyBlue2;
+    padding: 0.6rem !important;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem !important;
+}
+.taskList .itemContainer:nth-child(1){
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+@media screen and (max-width: 560px) {
+    .taskList{
+        width: 100%;
+        margin-left: 0 !important;
+        align-items: center !important;
+       
+    }
+    .options{
+        width: 92% !important;
+        margin: 0 auto !important;
+        border-bottom-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+
+    }
+    .filter-container{
+        display: none;
+    }
+    .filter-container2{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        height: 4rem;
+       
+    }
+    .filter-container2 div{
+        width: 92%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 3rem;
+        margin: 0 auto !important;
+        border-radius: 0.4rem;
+    }
+}

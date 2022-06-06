@@ -1,0 +1,96 @@
+$LightColor: #ffffff;
+$DarkColor: #000;
+$lightBlue: hsl(236, 33%, 92%);
+$darkBlue: hsl(236, 9%, 61%);
+$brightBlue:  hsl(220, 98%, 61%);
+$darkGreyBlue1: hsl(236, 9%, 61%);
+$darkGreyBlue2: hsl(235, 19%, 35%);
+$gradient: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+$font : 'Josefin Sans', sans-serif;
+
+
+.inputContainer form{
+    width: 27rem;
+    padding: 1rem;
+    height: 2.8rem;
+    border-radius: 0.2rem;
+    outline: none;
+    border: 1px solid $LightColor;
+    background-color: $LightColor;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  
+
+}
+.dark-theme form{
+    background-color: $darkGreyBlue2;
+    border: 1px solid $darkGreyBlue2;
+}
+.inputContainer input{
+    align-self: center;
+    margin-left: 2rem !important;
+}
+.dark-theme input{
+    background-color: $darkGreyBlue2;
+    color: $lightBlue;
+}
+
+.textInput{
+    border: none !important;
+    outline: none;
+    width: 70%;
+    font-size: 1.1rem;
+    font-weight: 700 !important;
+    font-family: $font;
+   
+}
+
+
+.submit-btn{
+    width: 1.4rem;
+    height: 1.3rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    
+   margin: 0;
+   padding: 0;
+   align-self: center;
+   margin-left: 2rem !important;
+    border-radius: 50%;
+    border: 1px solid rgb(93, 91, 91);
+}
+.dark-theme .submit-btn{
+    background-color: $darkGreyBlue2;
+    border: 1px solid $darkGreyBlue1;
+}
+.submit-btn:hover{
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    transition: all 0.5ms ease-in;
+}
+.submit-btn svg{
+    opacity: 0;
+}
+.show-svg svg{
+    opacity: 1;
+    transition: all 0.5ms ease-in;
+   
+}
+
+
+@media screen and (max-width: 560px) {
+    .inputContainer{
+        width: 100%;
+        display: flex;
+        align-items: center !important;
+        flex-direction: row;
+    }
+    .inputContainer form{
+        width: 90% !important;
+       align-self: center !important;
+       border: 0;
+      margin: 0 auto !important;
+     
+    }
+   
+}

@@ -1,0 +1,37 @@
+$font : 'Josefin Sans', sans-serif;
+$primaryColor: #ffffff;
+.header{
+    background: url('../../../public/images/bg-desktop-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font;
+    color: $primaryColor;
+}
+.header-content{
+    width: 27rem;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4.7rem  !important;
+    font-size: 1.3rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 7px;
+}
+.theme{
+    cursor: pointer;
+}
+
+@media screen  and (max-width: 560px){
+    .header-content{
+        width: 100%;
+        font-size: 1rem;
+        margin: 0 !important;
+        justify-content: space-around;
+    }
+}
